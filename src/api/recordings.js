@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://audio-player-v79q.onrender.com'
+   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000'
 });
 
 export const getRecordings = async () => {
