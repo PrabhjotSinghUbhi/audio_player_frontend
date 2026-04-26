@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://harpist-whimsical-wow.ngrok-free.dev', 
-  headers: { 'ngrok-skip-browser-warning': 'any' },
+  baseURL: 'https://audio-player-v79q.onrender.com'
 });
 
 export const getRecordings = async () => {
